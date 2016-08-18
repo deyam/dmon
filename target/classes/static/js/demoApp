@@ -1,0 +1,9 @@
+var demoApp = angular.module('demoApp', []);
+demoApp.controller('SimpleController',function ($scope) {
+    $scope.customers = [
+        { name: 'Dave J', city: 'Ph'},
+        { name: 'Deya J', city: 'Ar'},
+        { name: 'Deya D', city: 'Ca'},
+        { name: 'Deya M', city: 'Ny'}
+        ];
+});

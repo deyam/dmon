@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Chart - tc-angular-chartjs</title>
+    <!-- HEAD -->
+    <link rel="stylesheet" href="js/node_modules/tc-angular-chartjs/css/prism.css">
+    <link rel="stylesheet" href="js/node_modules/tc-angular-chartjs/css/normalize.css">
+    <link rel="stylesheet" href="js/node_modules/tc-angular-chartjs/css/foundation.min.css">
+    <link rel="stylesheet" href="js/node_modules/tc-angular-chartjs/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/node_modules/tc-angular-chartjs/css/app.css">
+    <!--<script src="js/node_modules/tc-angular-chartjs/js/vendor/modernizr.js"></script>-->
+    <link href="js/bootstrap.css" rel="stylesheet">
+    <!-- END HEAD -->
+</head>
+
+
+
+
+
+<body >
+<br/>
+<div class="container" ng-app="app3">
+    <div id="container" class="container">
+        <div class="row" ng-controller="myController">
+            <div class="col-lg-6 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">TCLine Chart</div>
+                    <div class="panel-body">
+
+                        <div class="medium-8 columns">
+                            <canvas tc-chartjs-line chart-options="options" chart-data="data" chart-legend="lineChart1" ></canvas>
+                        </div>
+                        <div class="medium-4 columns">
+                            <div tc-chartjs-legend chart-legend="lineChart1"></div>
+                        </div>
+
+                        
+
+                        <!--<canvas tc-chartjs chart-type="doughnut" chart-options="options" chart-data="data" auto-legend></canvas>-->
+
+                        <!--<div ng-app="app3">-->
+                            <!--<div ng-controller="myController">-->
+
+                                <!--<canvas tc-chartjs-line chart-options="options" data="data" auto-legend></canvas>-->
+
+                            <!--</div>-->
+                        <!--</div>-->
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/node_modules/angular/angular.js"></script>
+<script src="https://www.google.com/search?client=safari&rls=en&q=ui-bootstrap-tpls.min.js&ie=UTF-8&oe=UTF-8"></script></script>
+<script src="js/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+<script src="js/node_modules/chart.js/dist/Chart.js"></script>
+<script src="js/node_modules/angular-chart.js/dist/angular-chart.js"></script>
+
+<script src="js/app3.js"></script>
+<script src="js/node_modules/tc-angular-chartjs/dist/tc-angular-chartjs.js"></script>
+</body>
+</html>
+

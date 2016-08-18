@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Stacked Bar chart</title>
+    <link href="js/bootstrap.css" rel="stylesheet">
+</head>
+<body >
+<br/>
+<div class="container" ng-app="app2">
+    <div id="container" class="container">
+    <div class="row" ng-controller="LineCtrl">
+        <div class="col-lg-6 col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">Stacked Bar Chart</div>
+                <div class="panel-body">
+                    <canvas class="chart chart-bar" chart-data="data" chart-labels="labels"
+                            chart-options="options" chart-series="series"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container" ng-app="app3">
+    <div id="container1" class="container">
+    <div class="row" ng-controller="myController">
+
+        <canvas tc-chartjs-line chart-type="doughnut" chart-options="options" chart-data="data" auto-legend></canvas>
+    </div>
+    </div>
+</div>
+
+
+<script src="js/node_modules/angular/angular.js"></script>
+<script src="https://www.google.com/search?client=safari&rls=en&q=ui-bootstrap-tpls.min.js&ie=UTF-8&oe=UTF-8"></script></script>
+<script src="js/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+<script src="js/node_modules/chart.js/dist/Chart.js"></script>
+<script src="js/node_modules/angular-chart.js/dist/angular-chart.js"></script>
+<script src="js/app2.js"></script>
+<script src="js/app3.js"></script>
+<script src="js/node_modules/tc-angular-chartjs/dist/tc-angular-chartjs.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" href="gcss.css"/>
+<head>
+    <meta charset="utf-8"/>
+    <title>DashBoard</title>
+
+</head>
+<body>
+<h1>AngularJS Graph with animated SVG line</h1>
+
+<div ng-app="graphApp">
+    <div ng-controller="graphController as graph">
+
+        <div class="graph" style="width:200px; height:100px;" >
+
+            <div class="y" style="width:33px;">44</div>
+
+            <div class="x">55</div>
+            <svg height="44" width="100%">
+                <line class="line{{$index}}" ng-repeat="point in points" x1="50" y1="30" x2="200" y2="90" />
+            </svg>
+            <div class="dot dot{{$index}}" ng-repeat="point in points" style="bottom:23; left:44;" data-title="cc: dd"></div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<p>It always struck me that AngularJS could be used as a nice simple tool for visualising data.</p>
+
+<p>Here I use ng-repeat and data binding for inline styling and controlling SVG</p>
+
+</body>
